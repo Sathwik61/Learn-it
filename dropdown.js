@@ -2,6 +2,8 @@ const msg = document.getElementById("msg");
 const cls = document.getElementById("cls");
 const bot = document.getElementById("bot");
 const pdf = document.getElementById("pdf");
+const abt = document.getElementById("abt");
+const log = document.getElementById("log");
 
 msg.addEventListener("click", () => {
   window.location.assign("chat-room/message.html");
@@ -17,4 +19,11 @@ bot.addEventListener("click", () => {
 
 pdf.addEventListener("click", () => {
   window.location.assign("/pdfextractor/pdfextract.html");
+});
+
+abt.addEventListener("click", () => {
+  window.location.assign("./other/about.html");
+});
+log.addEventListener("click", () => {
+  window.location.assign("./other/login.html");
 });
